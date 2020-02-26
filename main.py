@@ -19,7 +19,6 @@ for i in range(1550):
 
     wordOutput = wordsList[currentwordcount]
     bashCommand = "twurl -d 'status="+wordOutput+" be like: bruh"+"' /1.1/statuses/update.json"
-    # bashCommand = "echo "+wordOutput
 
     os.system(bashCommand)
 
@@ -27,8 +26,4 @@ for i in range(1550):
     
     sleep(1800)
 
-
-# bashCommand = "twurl -d 'status=bruh' /1.1/statuses/update.json"
 process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
-
-# twurl -d 'status=bruh' /1.1/statuses/update.json
